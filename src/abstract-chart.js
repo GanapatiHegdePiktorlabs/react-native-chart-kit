@@ -49,8 +49,8 @@ class AbstractChart extends Component {
           y1={(height / 4) * i + paddingTop}
           x2={width}
           y2={(height / 4) * i + paddingTop}
-          stroke={this.props.chartConfig.color(0.2)}
-          strokeDasharray="5, 10"
+          stroke='#eee'
+          // strokeDasharray="5, 10"
           strokeWidth={1}
         />
       );
@@ -66,8 +66,8 @@ class AbstractChart extends Component {
         y1={height - height / 4 + paddingTop}
         x2={width}
         y2={height - height / 4 + paddingTop}
-        stroke={this.props.chartConfig.color(0.2)}
-        strokeDasharray="5, 10"
+        stroke='#eee'
+        // strokeDasharray="5, 10"
         strokeWidth={1}
       />
     );
@@ -176,7 +176,7 @@ class AbstractChart extends Component {
           )}
           y2={height - height / 4 + paddingTop}
           stroke={this.props.chartConfig.color(0.2)}
-          strokeDasharray="5, 10"
+          // strokeDasharray="5, 10"
           strokeWidth={1}
         />
       );
@@ -193,7 +193,7 @@ class AbstractChart extends Component {
         x2={Math.floor(paddingRight)}
         y2={height - height / 4 + paddingTop}
         stroke={this.props.chartConfig.color(0.2)}
-        strokeDasharray="5, 10"
+        // strokeDasharray="5, 10"
         strokeWidth={1}
       />
     );

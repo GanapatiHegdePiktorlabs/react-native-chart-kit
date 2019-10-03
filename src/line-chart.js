@@ -291,7 +291,7 @@ class LineChart extends AbstractChart {
                   })
                 : null}
             </G>
-            <G>
+            {/* <G>
               {withInnerLines
                 ? this.renderVerticalLines({
                     ...config,
@@ -306,7 +306,7 @@ class LineChart extends AbstractChart {
                     paddingRight
                   })
                 : null}
-            </G>
+            </G> */}
             <G>
               {withVerticalLabels
                 ? this.renderVerticalLabels({
