@@ -47,7 +47,7 @@ class AbstractChart extends Component {
           key={Math.random()}
           x1={paddingRight}
           y1={(height / 4) * i + paddingTop}
-          x2={width}
+          x2={width-10}
           y2={(height / 4) * i + paddingTop}
           stroke='#eee'
           // strokeDasharray="5, 10"
@@ -64,7 +64,7 @@ class AbstractChart extends Component {
         key={Math.random()}
         x1={paddingRight}
         y1={height - height / 4 + paddingTop}
-        x2={width}
+        x2={width-10}
         y2={height - height / 4 + paddingTop}
         stroke='#eee'
         // strokeDasharray="5, 10"
