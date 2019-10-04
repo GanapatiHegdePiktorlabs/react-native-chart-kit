@@ -16,7 +16,7 @@ class PieChart extends AbstractChart {
     const { borderRadius = 0 } = style;
     const chart = Pie({
       center: this.props.center || [0, 0],
-      r: 0,
+      r: 60,
       R: this.props.height / 2.5,
       data: this.props.data,
       accessor: x => {
@@ -43,11 +43,9 @@ class PieChart extends AbstractChart {
           <Path d={c.sector.path.print()} fill={c.item.color} />
           {hasLegend ? (
             <Rect
-              width="16px"
-              height="16px"
+              width="12px"
+              height="12px"
               fill={c.item.color}
-              rx={8}
-              ry={8}
               x={this.props.width / 2.5 - 24}
               y={
                 -(this.props.height / 2.5) +
@@ -67,7 +65,7 @@ class PieChart extends AbstractChart {
                 12 * 2
               }
             >
-              {`${value} ${c.item.name}`}
+              {`${c.item.name}`}
             </Text>
           ) : null}
         </G>
