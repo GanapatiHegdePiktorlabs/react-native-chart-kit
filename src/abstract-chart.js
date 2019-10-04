@@ -85,7 +85,7 @@ class AbstractChart extends Component {
     } = config;
     const decimalPlaces =
       this.props.chartConfig.decimalPlaces === undefined
-        ? 2
+        ? 0
         : this.props.chartConfig.decimalPlaces;
     const yAxisLabel = this.props.yAxisLabel || "";
 
