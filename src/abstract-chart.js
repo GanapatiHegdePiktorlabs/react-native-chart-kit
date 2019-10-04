@@ -98,7 +98,7 @@ class AbstractChart extends Component {
         const label = this.props.fromZero
           ? (this.calcScaler(data) / (count - 1)) * i + Math.min(...data, 0)
           : (this.calcScaler(data) / (count - 1)) * i + Math.min(...data);
-        yLabel = `${yAxisLabel}${label}`;
+        yLabel =`${yAxisLabel}${label.toFixed(decimalPlaces)}`;
       }
 
       const x = paddingRight - yLabelsOffset;
