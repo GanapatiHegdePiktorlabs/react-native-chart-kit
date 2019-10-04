@@ -40,7 +40,8 @@ class PieChart extends AbstractChart {
 
       return (
         <G key={Math.random()}>
-          <Path d={c.sector.path.print()} fill={c.item.color} />
+          <Text fontSize={16}   x={-35}>Top {this.props.data.length} skills</Text>
+          <Path d={c.sector.path.print()} fill={c.item.color} strokeWidth={2} stroke={'#fff'} />
           {hasLegend ? (
             <Rect
               width="12px"
