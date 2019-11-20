@@ -41,7 +41,7 @@ class PieChart extends AbstractChart {
       return (
         <G key={Math.random()}>
           <Text fontSize={16} fill={"#2e2e2e"} y={5} x={-40}>
-            Top {this.props.data.length} skills
+            Top {this.props.data.length} Skills
           </Text>
           <Path
             d={c.sector.path.print()}
@@ -82,7 +82,7 @@ class PieChart extends AbstractChart {
     return (
       <View
         style={{
-          width: this.props.width,
+          width: 200,
           height: this.props.height,
           padding: 0,
           ...style
