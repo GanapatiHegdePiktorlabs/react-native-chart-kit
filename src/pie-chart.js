@@ -17,7 +17,7 @@ class PieChart extends AbstractChart {
     const chart = Pie({
       center: this.props.center || [0, 0],
       r: 60,
-      R: this.props.height / 2.5,
+      R: this.props.height / 2.3,
       data: this.props.data,
       accessor: x => {
         return x[this.props.accessor];
